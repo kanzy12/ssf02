@@ -11,7 +11,7 @@ app.get('/number', (req, res) => {
     res.type('text/html');
     // res.sendFile(__dirname + `/public/images/numbers/number${number}.jpg`);
 
-    res.send(`<img src='images/numbers/number${number}.jpg'>`);
+    res.send(`<h1>Showing number ${number}</h1><img src='images/numbers/number${number}.jpg'>`);
 })
 
 app.use(express.static(__dirname + '/public'));
